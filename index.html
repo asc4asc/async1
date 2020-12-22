@@ -18,19 +18,11 @@
 <body>
     
 <center>    
-test me please: <p id="demo"></p>
-
-<button>A</button>
-<button>B</button>
-<button>C</button>
-<p>
-<button>D</button>
-<button>E</button>
-<button>F</button>
-   
+Test me please: Bitte die Konsole aufrufen. z.B. Firefox F12 <p id="demo"></p>
+ 
 <script>
-  "use strict";
-   function resolveAfter2Seconds() {
+"use strict";
+function resolveAfter2Seconds() {
   return new Promise(resolve => {
     setTimeout(() => {
       resolve('resolved');
@@ -47,11 +39,6 @@ async function asyncCall() {
 
 asyncCall();
     
-document.body.addEventListener("click", event => {
-    if (event.target.nodeName == "BUTTON") {
-      console.log("Clicked", event.target.textContent);
-    }
-});
 </script>    
    
 </body>
